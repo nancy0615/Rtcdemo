@@ -49,9 +49,9 @@ public class AlivcJoinChannelActivity extends AppCompatActivity implements View.
     private ChannelEditVIew mEtChannelId;
     private String[] permissions = new String[] {
         PermissionUtil.PERMISSION_CAMERA,
-        PermissionUtil.PERMISSION_WRITE_EXTERNAL_STORAGE,
+       // PermissionUtil.PERMISSION_WRITE_EXTERNAL_STORAGE,
         PermissionUtil.PERMISSION_RECORD_AUDIO,
-        PermissionUtil.PERMISSION_READ_EXTERNAL_STORAGE
+        //PermissionUtil.PERMISSION_READ_EXTERNAL_STORAGE
     };
     private AliUserInfoResponse.AliUserInfo rtcAuthInfo;
     private TextView mTvConfirm;
