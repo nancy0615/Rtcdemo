@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alivc_voicecall_rl_login_layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_biginteractiveclass_color_text_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/alivc_voicecall_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title_bar">
+
+        <TextView
+            android:id="@+id/alivc_biginteractiveclass_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+            android:text="@string/alivc_big_interactive_class_string_title"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_gray"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_biginteractiveclass_view_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alivc_voicecall_title"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/alivc_biginteractiveclass_tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_10"
+            android:text="@string/alivc_big_interactive_class_string_text_sub_title"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_gray"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_10"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/alivc_biginteractiveclass_textinputlayout_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alivc_biginteractiveclass_tv_sub_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_top"
+            app:hintTextAppearance="@style/hintTextAppearance">
+
+            <EditText
+                android:id="@+id/alivc_biginteractiveclassl_edittext_student_name"
+                android:layout_width="@dimen/alivc_biginteractiveclass_width_et_306"
+                android:layout_height="@dimen/alivc_biginteractiveclass_width_selector_40"
+                android:hint="@string/alivc_biginteractiveclass_string_hint_student_name"
+                android:maxLines="1"
+                android:textColor="@color/alivc_biginteractiveclass_color_text_gray"
+                android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+                android:theme="@style/hintTextAppearance" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/alivc_biginteractiveclass_textinputlayout_channelid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alivc_biginteractiveclass_textinputlayout_student_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_10"
+            app:hintTextAppearance="@style/hintTextAppearance">
+
+            <com.aliyun.rtc.interactiveclassplayer.view.ChannelEditVIew
+                android:id="@+id/alivc_biginteractiveclass_edittext_channelid"
+                android:layout_width="@dimen/alivc_biginteractiveclass_width_et_306"
+                android:layout_height="@dimen/alivc_biginteractiveclass_width_selector_40"
+                android:hint="@string/alivc_biginteractiveclass_string_hint_room_num"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColor="@color/alivc_biginteractiveclass_color_text_gray"
+                android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+                android:theme="@style/hintTextAppearance" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/alivc_voicecall_tv_begin_speak"
+            android:layout_width="@dimen/alivc_biginteractiveclass_width_et_306"
+            android:layout_height="@dimen/alivc_biginteractiveclass_height_tv_48"
+            android:layout_below="@id/alivc_biginteractiveclass_textinputlayout_channelid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_height_titlebar_60"
+            android:background="@drawable/alivc_biginteractiveclass_btn_bg_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/alivc_biginteractiveclass_string_btn_start_voice_call"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_15" />
+    </RelativeLayout>
+</RelativeLayout>

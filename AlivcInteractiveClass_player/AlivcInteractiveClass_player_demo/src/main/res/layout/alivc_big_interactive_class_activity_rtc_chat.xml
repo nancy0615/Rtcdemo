@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alivc_big_interactive_class_rl_content_class_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_biginteractiveclass_color_room_background">
+
+    <RelativeLayout
+        android:id="@+id/alivc_voicecall_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title_bar">
+
+        <LinearLayout
+            android:id="@+id/aliyun_big_interactice_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/aliyun_big_interactive_class_icon_back" />
+
+
+            <TextView
+                android:id="@+id/alivc_biginteractiveclass_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alivc_big_interactive_class_string_title"
+                android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+                android:textSize="@dimen/alivc_biginteractiveclass_size_text_15" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/alivc_big_interactive_class_landscape_ib_share"
+            android:layout_width="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+            android:layout_height="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+            android:layout_marginRight="@dimen/alivc_biginteractiveclass_padding_20"
+            android:background="@null"
+            android:src="@drawable/alivc_biginteractiveclass_share"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_biginteractiveclass_view_line"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/alivc_big_interactive_class_fl_Container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_vedio_280"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margintop_160">
+
+    </FrameLayout>
+
+    <SurfaceView
+        android:id="@+id/alivc_big_interactive_class_surface_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/alivc_voicecall_title" />
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_icon_class_not_begin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/alivc_biginteractiveclass_class_not_begin"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@+id/alivc_big_interactive_class_ll_full_screen"
+        android:layout_width="@dimen/alivc_biginteractiveclass_width_full_screen_ll_120"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_full_screen_ll_34dp"
+        android:layout_below="@id/alivc_big_interactive_class_fl_Container"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+        android:background="@drawable/alivc_biginteractiveclass_bg_full_screen_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/alivc_biginteractiveclass_margin_16"
+            android:layout_height="@dimen/alivc_biginteractiveclass_margin_16"
+            android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_16"
+            android:src="@mipmap/alivc_big_interactive_class_icon_mine_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alivc_biginteractiveclass_size_text_14"
+            android:background="@color/alivc_biginteractiveclass_color_full_screen_bg"
+            android:text="@string/alivc_big_interactive_class_string_full_screen"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_white" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/alivc_big_interactive_class_rcy_student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alivc_voicecall_title"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/alivc_big_interactive_class_rcy_function_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_10"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_margin_10"
+        android:layout_marginBottom="@dimen/alivc_biginteractiveclass_padding_20" />
+
+
+</RelativeLayout>
